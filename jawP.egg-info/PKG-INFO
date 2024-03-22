@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: jawP
+Version: 0.0.0
+Requires-Dist: openmeteo_requests
+Requires-Dist: requests_cache
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: retry_requests
+Requires-Dist: darts
