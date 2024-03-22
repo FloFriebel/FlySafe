@@ -1,3 +1,4 @@
 raw_data/
 .python-version
 *.sqlite3
+*.sqlite*
