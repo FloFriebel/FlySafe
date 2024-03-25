@@ -1,10 +1,6 @@
-from darts.dataprocessing.transformers.scaler import Scaler
+
 from sklearn.preprocessing import MinMaxScaler
 from darts import TimeSeries
-from darts.models.forecasting.tft_model import TFTModel
-from darts.metrics import mse
-from darts.metrics import smape, mae
-from torchmetrics.regression import MeanAbsoluteError
 import pandas as pd
 import numpy as np
 from project_notebooks.data_preprocessing.load_data import load_data
@@ -47,8 +43,8 @@ def data_preprocessing(_start, _end):
     past_cov_val_series = TimeSeries.from_dataframe(past_cov_val)
     future_cov_val_series = TimeSeries.from_dataframe(future_cov_val)
 
-    return (y_val_series, past_cov_val_series, future_cov_val_series)
-#return target Scaler, call
+    return (y_val_series, past_cov_val_series, future_cov_val_series, target_scaler)
+
 
 # Example
 if __name__=="__main__":

@@ -3,3 +3,7 @@ raw_data/
 *.sqlite3
 *.sqlite*
 .cache.sqlite
+*.egg-info
+.coverage
+.ipynb_checkpoints
+**/__pycache__/
