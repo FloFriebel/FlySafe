@@ -7,3 +7,9 @@ Requires-Dist: numpy
 Requires-Dist: pandas
 Requires-Dist: retry_requests
 Requires-Dist: darts
+Requires-Dist: sklearn
+Requires-Dist: torchmetrics
+Requires-Dist: pytorch_lightning
+Requires-Dist: matplotlib
+Requires-Dist: uvicorn
+Requires-Dist: fastapi

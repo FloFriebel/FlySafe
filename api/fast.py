@@ -1,8 +1,8 @@
 import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from project_notebooks.data_preprocessing.data_preprocessing import data_preprocessing
-from project_notebooks.data_preprocessing.predict import load_model, predict #loading function from predict.py file
+from jawP.data_preprocessing.data_preprocessing import data_preprocessing
+from jawP.data_preprocessing.predict import load_model, predict #loading function from predict.py file
 
 app = FastAPI()
 

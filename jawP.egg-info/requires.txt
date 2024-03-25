@@ -4,3 +4,9 @@ numpy
 pandas
 retry_requests
 darts
+sklearn
+torchmetrics
+pytorch_lightning
+matplotlib
+uvicorn
+fastapi
