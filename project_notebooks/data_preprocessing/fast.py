@@ -2,7 +2,7 @@ import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from project_notebooks.data_preprocessing.data_preprocessing import data_preprocessing
-from project_notebooks.data_preprocessing.predict import load_model #loading function from predict.py file
+from project_notebooks.data_preprocessing.predict import load_model, predict #loading function from predict.py file
 
 app = FastAPI()
 
@@ -17,10 +17,12 @@ app.add_middleware(
 )
 
 app.state.model = load_model()
-
+@app.get("/")
+def root():
+    return dict(greetings= "hallo")
 
 @app.get("/predict")
-def predict(
+def prediction(
     _start,
     _end):
 
@@ -29,4 +31,11 @@ def predict(
 
     y_val_series, past_cov_val_series, future_cov_val_series, target_scaler = data_preprocessing(_start, _end)
     preds = predict(model, y_val_series, past_cov_val_series, future_cov_val_series, target_scaler)
-    return preds
+    result = {
+        "Zurich" : list(preds[:,0]),
+        "Lugano": list(preds[:,1]),
+        "Innsbruck": list(preds[:,2]),
+        "Bolzano" : list(preds[:,3])
+    }
+    print(result)
+    return result
