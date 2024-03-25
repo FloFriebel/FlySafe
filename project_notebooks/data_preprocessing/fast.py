@@ -1,7 +1,6 @@
-import pandas as pd
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from project_notebooks.data_preprocessing.load_data import load_data
 from project_notebooks.data_preprocessing.data_preprocessing import data_preprocessing
 from project_notebooks.data_preprocessing.predict import load_model #loading function from predict.py file
 
@@ -17,13 +16,17 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 
+app.state.model = load_model()
+
+
 @app.get("/predict")
 def predict(
-    n=output_chunk_length,
-    series=y_val_series,
-    past_covariates = past_cov_val_series,
-    future_covariates = future_cov_val_series)
-    ):
+    _start,
+    _end):
 
-    model = load_model()
+    model = app.state.model
     assert model is not None
+
+    y_val_series, past_cov_val_series, future_cov_val_series, target_scaler = data_preprocessing(_start, _end)
+    preds = predict(model, y_val_series, past_cov_val_series, future_cov_val_series, target_scaler)
+    return preds

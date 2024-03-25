@@ -8,3 +8,6 @@ darts
 sklearn
 torchmetrics
 pytorch_lightning
+matplotlib
+uvicorn
+fastapi
