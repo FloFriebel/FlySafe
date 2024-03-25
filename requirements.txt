@@ -5,7 +5,7 @@ pandas
 retry_requests
 
 darts
-sklearn
+scikit-learn
 torchmetrics
 pytorch_lightning
 matplotlib

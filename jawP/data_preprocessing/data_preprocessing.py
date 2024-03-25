@@ -3,7 +3,7 @@ from sklearn.preprocessing import MinMaxScaler
 from darts import TimeSeries
 import pandas as pd
 import numpy as np
-from project_notebooks.data_preprocessing.load_data import load_data
+from jawP.data_preprocessing.load_data import load_data
 
 def data_preprocessing(_start, _end):
     correct = load_data(_start, _end)
