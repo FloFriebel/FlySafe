@@ -8,8 +8,10 @@ COPY requirements.txt requirements.txt
 
 # Then only, install taxifare!
 #COPY taxifare taxifare
-COPY jawP jawP
+COPY jawp jawp
 COPY api api
+COPY tft_v1_1yeardata_3h tft_v1_1yeardata_3h
+COPY tft_v1_1yeardata_3h.ckpt tft_v1_1yeardata_3h.ckpt
 COPY setup.py setup.py
 RUN pip install .
 
@@ -17,4 +19,5 @@ RUN pip install .
 COPY Makefile Makefile
 #RUN make reset_local_files
 
-CMD ["uvicorn", "api.fast:app", "--host", "0.0.0.0", "--port", "$PORT"]
+#CMD ["uvicorn", "api.fast:app", "--host", "0.0.0.0", "--port", "$PORT"]
+CMD uvicorn api.fast:app --host 0.0.0.0 --port $PORT
