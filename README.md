@@ -22,25 +22,20 @@ We utilized the open-meteo website for educational purposes and furthered our un
 <h2>Method</h2>
 For this <em>timeseries</em>-project we wanted to test different prediction-possibilities. And there fore we used the <em>Darts</em>-library. Testing different <em>mode</em>. Starting with <em>BlockRNN</em> and <em>Transformer</em> <em>Model</em>. Finally trained with the <em>TFT</em>-<em>Model</em>. We checked for <em>unscaled-Data</em> and in the end chose <em>MinMax-Scaler</em>. We evaluted the prediction using <em>SMAPE</em>, that was not realy convincing and used <em>MAE</em> metrics at the End.<br />
 The <em>Streamlit</em>-FrontEnd was based on an API created with <em>FastApi</em> and <em>DockerImages</em>. The setup was deployed to <em>Google</em> <em>Cloud</em>.
-The model has been trained for one year of Data. 
+The model has been trained for one year of Data. <br />
 
 The <em>features</em> are:<br />
-
 | Variable           | Valid time         | Unit | Description                                                                         |
 | :---               |     :---:          |:---: | :---                                                                                |
 | temperature_2m     | Instant            | °C   | Air temperature at 2 meters above ground                                            |
 | wind_speed_10m     | Instant            | km/h | Wind speed at 10 meters above ground. Wind speed on 10 meters is the standard level.|
 | wind_direction_10m | Instant            | °    | Wind direction at 10 meters above ground                                            |
 | wind_gusts_10m     | Preceding hour max | km/h | Gusts at 10 meters above ground as a maximum of the preceding hour.                 |
-
-
-- temperature_2m	Instant	°C 	Air temperature at 2 meters above ground<br />
-- wind_speed_10m Instant	km/h	Wind speed at 10 meters above ground. Wind speed on 10 meters is the standard level.<br />
-- wind_direction_10m Instant	°	Wind direction at 10 meters above ground<br />
-- wind_gusts_10m	Preceding hour max	km/h Gusts at 10 meters above ground as a maximum of the preceding hour.<br />
-
+<br /><br />
 The <em>target</em> is:<br />
-- surface_pressure	Instant	hPa	Atmospheric air pressure reduced to mean sea level or pressure at surface. Typically pressure on mean sea level is used in meteorology. Surface pressure gets lower with increasing elevation.
+| Variable           | Valid time         | Unit | Description                                                                         |
+| :---               |     :---:          |:---: | :---                                                                                |
+| surface_pressure   | Instant            | hPa  | Atmospheric air pressure reduced to mean sea level or pressure at surface. Typically pressure on mean sea level is used in meteorology. Surface pressure gets lower with increasing elevation.|
 
 <h2>Licence and Contributing</h2>
 is this necessary!
