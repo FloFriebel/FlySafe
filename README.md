@@ -1,9 +1,7 @@
 <h1>Jaw-P-project</h1>
 <h2>Just another weather - Prediction</h2>
 by
-<h2>Elena Battiston, Florence Friebel, Jessica Jähne, Vincenzo Zeni</h2>
-#<p>A <a href="http://example.com">link</a>.</p>
-#links to profiles?
+<h2><a href="[http://example.com](https://github.com/Elenya92)">Elena Battiston</a>, <a href="[[http://example.com](https://github.com/FloFriebel)](https://github.com/FloFriebel)">Florence Friebel</a>, <a href="[http://example.com](https://github.com/jjaehne)">Jessica Jähne</a>, <a href="[http://example.com](https://github.com/VinceZeni)">Vincenzo Zeni</a></h2>
 
 <h2>What's it all about:</h2>
 Föhn is alpine weather phenomenom and a paragliders hassel
@@ -16,13 +14,13 @@ The locations choosen are Zürich-Lugano and Innsbruck-Bolzano. Where Zurich and
 
 
 <h2>Data source </h2>
-**Licence**
+<strong>Licence</strong>
 By using the Free API from <a href="https://open-meteo.com/en/terms">open-meteo</a> for non-commercial use, we thankful to open-meteo for their 1000 free API-calls per day. And we could use their great work for our project, because the provided data structure is amazing, making the use straight forward.
 We utilized the open-meteo website for educational purposes and furthered our understanding of Timeseries, Back-end, Docker and Frontend, building upon our existing knowledge.
 
 <h2>Method</h2>
-For this _timeseries_-project we wanted to test different _prediction-possibilities. And there fore we used the _Darts_-library. Testing different _model_. Starting with _BlockRNN_ and _Transformer_ _Model_. Finally trained with the _TFT- Model_. We checked for _unscaled-Data_ and in the end chose _MinMax-Scaler_- We evaluted the prediction using _SMAPE_, that was not realy convincing and used _MAE_ metrics at the End.
-The _Streamlit_-FrontEnd was based on an API created with _FastApi_ and _DockerImages_. The setup was deployed to _Google_ _Cloud_.
+For this <em>timeseries</em>-project we wanted to test different prediction-possibilities. And there fore we used the <em>Darts</em>-library. Testing different <em>mode</em>. Starting with <em>BlockRNN</em> and <em>Transformer</em> <em>Model</em>. Finally trained with the <em>TFT</em>-<em>Model</em>. We checked for <em>unscaled-Data</em> and in the end chose <em>MinMax-Scaler</em>- We evaluted the prediction using <em>SMAPE</em>, that was not realy convincing and used <em>MAE</em> metrics at the End.
+The <em>Streamlit</em>-FrontEnd was based on an API created with <em>FastApi</em> and <em>DockerImages</em>. The setup was deployed to <em>Google</em> <em>Cloud</em>.
 The model has been trained for one year of Data. The features are:
 
 temperature_2m	Instant	°C 	Air temperature at 2 meters above ground
