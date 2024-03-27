@@ -33,9 +33,10 @@ The <em>features</em> are:<br />
 | wind_gusts_10m     | Preceding hour max | km/h | Gusts at 10 meters above ground as a maximum of the preceding hour.                 |
 <br /><br />
 The <em>target</em> is:<br />
-| Variable           | Valid time         | Unit | Description                                                                         |
-| :---               |     :---:          |:---: | :---                                                                                |
-| surface_pressure   | Instant            | hPa  | Atmospheric air pressure reduced to mean sea level or pressure at surface. Typically pressure on mean sea level is used in meteorology. Surface pressure gets lower with increasing elevation.|
+
+| Variable         | Valid time | Unit | Description                                                                         |
+| :---             |     :---:  |:---: | :---                                                                                |
+| surface_pressure | Instant    | hPa  | Atmospheric air pressure reduced to mean sea level or pressure at surface. Typically pressure on mean sea level is used in meteorology. Surface pressure gets lower with increasing elevation.|
 
 <h2>Licence and Contributing</h2>
 is this necessary!
