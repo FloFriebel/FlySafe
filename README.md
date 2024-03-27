@@ -5,7 +5,11 @@
 <h2>What's it all about:</h2><br />
 Föhn is alpine weather phenomenom and a paragliders hassel<br />
 
-A simple Defenition:
+<img src="https://commons.wikimedia.org/wiki/File:Parapente_-_Les_Saisies_02.JPG?uselang=fr" longdesc="This is an image of a two-layered birthday cake." /> [<a href=
+"description.html" title="long description of the image">D</a>]
+
+<br />
+A simple defenition:
 
 Föhn is defined as sudden gust of wind created by pressure difference on both sides of the alpine range.
 Paragliding is a weather dependend outdoor sport. To do it in save conditions we prefer the pressure difference not exceeding 4 hPa between the north and south side of the Alps.
@@ -31,7 +35,9 @@ The <em>features</em> are:<br />
 | wind_speed_10m     | Instant            | km/h | Wind speed at 10 meters above ground. Wind speed on 10 meters is the standard level.|
 | wind_direction_10m | Instant            | °    | Wind direction at 10 meters above ground                                            |
 | wind_gusts_10m     | Preceding hour max | km/h | Gusts at 10 meters above ground as a maximum of the preceding hour.                 |
-<br /><br />
+
+
+<br />
 The <em>target</em> is:<br />
 
 | Variable         | Valid time | Unit | Description                                                                         |
@@ -39,10 +45,7 @@ The <em>target</em> is:<br />
 | surface_pressure | Instant    | hPa  | Atmospheric air pressure reduced to mean sea level or pressure at surface. Typically pressure on mean sea level is used in meteorology. Surface pressure gets lower with increasing elevation.|
 
 <h2>Licence and Contributing</h2>
-is this necessary!
 API will be switched of because of GCP -running costs!
 
-
 <h2>Acknowledgements</h2>
-
-Thank to leWagon TAs for batch #1601
+Thank to leWagon TAs for batch #1601 for helping us
