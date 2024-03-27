@@ -1,10 +1,9 @@
 <h1>Jaw-P-project</h1>
 <h2>Just another weather - Prediction</h2>
-by
-<h2><a href="https://github.com/Elenya92">Elena Battiston</a>, <a href="https://github.com/FloFriebel">Florence Friebel</a>, <a href="https://github.com/jjaehne">Jessica Jähne</a>, <a href="https://github.com/VinceZeni">Vincenzo Zeni</a></h2>
+<h2>by <a href="https://github.com/Elenya92">Elena Battiston</a>, <a href="https://github.com/FloFriebel">Florence Friebel</a>, <a href="https://github.com/jjaehne">Jessica Jähne</a>, <a href="https://github.com/VinceZeni">Vincenzo Zeni</a></h2>
 
-<h2>What's it all about:</h2>
-Föhn is alpine weather phenomenom and a paragliders hassel
+<h2>What's it all about:</h2><br />
+Föhn is alpine weather phenomenom and a paragliders hassel<br />
 
 A simple Defenition:
 
@@ -17,7 +16,6 @@ The locations choosen are Zürich-Lugano and Innsbruck-Bolzano. Where Zurich and
 
 
 <h2>Data source </h2>
-<strong>Licence</strong>
 By using the Free API from <a href="https://open-meteo.com/en/terms">open-meteo</a> for non-commercial use, we thankful to open-meteo for their 1000 free API-calls per day. And we could use their great work for our project, because the provided data structure is amazing, making the use straight forward.
 We utilized the open-meteo website for educational purposes and furthered our understanding of Timeseries, Back-end, Docker and Frontend, building upon our existing knowledge.
 
@@ -27,6 +25,15 @@ The <em>Streamlit</em>-FrontEnd was based on an API created with <em>FastApi</em
 The model has been trained for one year of Data. 
 
 The <em>features</em> are:<br />
+
+| Variable           | Valid time         | Unit | Description                                                                         |
+| :---               |     :---:          |:---: | :---                                                                                |
+| temperature_2m     | Instant            | °C   | Air temperature at 2 meters above ground                                            |
+| wind_speed_10m     | Instant            | km/h | Wind speed at 10 meters above ground. Wind speed on 10 meters is the standard level.|
+| wind_direction_10m | Instant            | °    | Wind direction at 10 meters above ground                                            |
+| wind_gusts_10m     | Preceding hour max | km/h | Gusts at 10 meters above ground as a maximum of the preceding hour.                 |
+
+
 - temperature_2m	Instant	°C 	Air temperature at 2 meters above ground<br />
 - wind_speed_10m Instant	km/h	Wind speed at 10 meters above ground. Wind speed on 10 meters is the standard level.<br />
 - wind_direction_10m Instant	°	Wind direction at 10 meters above ground<br />
