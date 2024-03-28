@@ -5,7 +5,7 @@
 <h2>What's it all about:</h2><br />
 :hair-dryer: Föhn is an alpine weather phenomenon and a paraglider's hassle.<br />
 
-![Paragliding flight.](<a href="https://commons.wikimedia.org/wiki/File:Parapente_-_Les_Saisies_02.JPG">Parapente - Les Saisies 02</a>)
+![Paragliding flight.](<a href="images/Parapente_-_Les_Saisies_02.JPG"</a>)
 
 <br />
 A simple defenition:
