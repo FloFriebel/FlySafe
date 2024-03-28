@@ -3,9 +3,8 @@
 <h2>by <a href="https://github.com/Elenya92">Elena Battiston</a>, <a href="https://github.com/FloFriebel">Florence Friebel</a>, <a href="https://github.com/jjaehne">Jessica Jähne</a>, <a href="https://github.com/VinceZeni">Vincenzo Zeni</a></h2>
 
 <h2>What's it all about:</h2><br />
-:hair-dryer: Föhn is an alpine weather phenomenon and a paraglider's hassle.<br />
-
-![Paragliding flight.](<a href="images/Parapente_-_Les_Saisies_02.JPG"</a>)
+Föhn is an alpine weather phenomenon and a paraglider's hassle.<br />
+<img src="images/Parapente_-_Les_Saisies_02.jpg" alt="Paragliding flight" />
 
 <br />
 A simple defenition:
